@@ -1,9 +1,274 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assignment.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>  -->
+    <link rel="stylesheet" href="home.css">
+    <!-- <link rel="stylesheet" href="home.js"> -->
+    <style type="text/css">
+    	.accordion-content{
+    		transition: 1s linear;
+    	}
+    </style>
 </head>
+
 <body>
-	<h1>hello</h1>
+    <header>
+        <div class="vodanh"></div>
+        <div class="head_container">
+            <h1 class="logo"><a href="index.html"><img src="./picture/logo.png" alt="logo"></a></h1>
+            <div class="menu_bar">
+
+                <div class="menu_con">
+
+                    <ul>
+                        <li><a href="">Các cơ quan kiểm định chất lượng & đối tác</a></li>
+                        <li><a href="">Tin tức và sự kiện</a></li>
+                        <li><a href="">Tuyển dụng</a></li>
+                        <li><a href="">Bản đồ và vị trí</a></li>
+                    </ul>
+                </div>
+                <div class="timkiem">
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Tìm kiếm">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="ngonngu">
+                        <a href=""><img src="./picture/el.png" alt=""></a>
+                        <a href=""><img src="./picture/vn.png" alt=""></a>
+                        <div class="div_user"><img src="./picture/user.png" id="user" alt="">
+                            <ul class="ul_login">
+                                <li><a href="dangnhap.html">Đăng Nhập</a></li>
+                                <li><a href="dangki.html">Đăng Kí</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <nav class="menu_chinh1">
+        <div class="menu_chinh">
+            <ul id="ul_menu_chinh">
+                <li><a href="">Trang chủ</a></li>
+                <li><a href="gioithieu.html">Giới thiệu</a>
+                    <ul class="ul_menu_phu">
+                        <li><a href="">Tầm nhìn và sứ mệnh</a></li>
+                        <li><a href="">Thông điệp từ hiệu trưởng</a></li>
+                        <li><a href="">Đội ngũ giáo viên</a></li>
+                        <li><a href="">Học Xá</a></li>
+                        <li><a href="">Thành tích học tập của học sinh</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Chương trình học</a>
+                    <ul class="ul_menu_phu">
+                        <li><a href="">Con đường học vấn</a></li>
+                        <li><a href="">Kiểm tra, đánh giá</a></li>
+                        <li><a href="">Chương trình giáo dục đạo đức</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Tuyển sinh</a>
+                    <ul class="ul_menu_phu">
+                        <li><a href="">Các quy định và chính sách tuyển sinh</a></li>
+                        <li><a href="">Học phí</a></li>
+                        <li><a href="">Đưa đón bằng xe bus</a></li>
+                        <li><a href="">Đồng phục</a></li>
+                    </ul>
+                </li>
+                <li><a href="bantin.html">Bản tin</a></li>
+                <li><a href="lienhe.html">Liên hệ</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="section_banner">
+        <div class="banner_cha">
+            <div class="slideshow-container">
+                <div class="myslides">
+                    <img src="picture/header1.jpg" style="width:100%">
+                </div>
+                <div class="myslides">
+                    <img src="picture/header2.jpg" style="width:100%">
+                </div>
+                <div class="myslides">
+                    <img src="picture/header3.jpg" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </section>
+    <section class="content">
+        <img src="./picture/earth.png" alt="">
+        <div class="container">
+            <div class="content_left">
+                <div class="content1">
+                    <h3>Chào mừng Quý vị đến với Trường Quốc Tế Singapore tại Đà Nẵng</h3>
+                    <p>Trường Quốc Tế Singapore tại Đà Nẵng nằm trong khu học xá mới, được xây dựng theo tiêu chuẩn quốc
+                        tế với cơ sở vật chất hiện đại, tọa lạc tại Khu Đô thị mới Phú Mỹ An, Đà Nẵng.</p>
+                    <p>Chúng tôi cung cấp chương trình giáo dục toàn diện cho học sinh nước ngoài và học sinh Việt Nam
+                        từ Nhà trẻ đến Lớp 12.
+                    </p>
+                    <p>Với việc chú trọng vào chương trình giáo dục kết hợp các giá trị Phương Đông và chương trình giáo
+                        dục toàn cầu, chúng tôi nuôi dưỡng các học sinh trở thành những cá nhân tự tin, sáng tạo, có kỹ
+                        năng giải quyết vấn đề và giao tiếp hiệu quả để trở thành những công dân có trách nhiệm trong
+                        thế kỷ 21.</p> 
+                </div>
+            </div>
+            <div class="content_right">
+
+                <div class="accordion_cha">
+                    <h3>Tại sao nên chọn chúng tôi?</h3>
+                    <button class="accordion active">Các công nhận và chứng nhận Quốc tế</button>
+                    <div class="accordion-content" style="display: block;">
+                        <p>Giải thưởng Rồng Vàng dành cho Hệ thống trường Quốc tế tốt nhất (Việt Nam)</p>
+                        <p>Được Ban Khảo Thí, Bộ Giáo dục Singapore (SEAB) công nhận là Trung tâm khảo thí chính thức
+                            tại nước ngoài</p>
+                        <p>Được công nhận là Trường Quốc tế của Cambridge.</p>
+                        <p>Được công nhận là Đơn vị giảng dạy Chương trình Chứng chỉ Quốc tế Bậc 3 International
+                            Foundation Diploma for Higher Education Studies (L3IFDHES).</p>
+                        <p>Thành viên được công nhận của Hiệp hội các Trường phổ thông và Cao đẳng phương Tây (WASC)</p>
+                        <span>Để biết thêm thông tin, vui lòng tham khảo tại phần Các cơ quan kiểm định chất lượng & Đối
+                            tác.</span>
+
+                    </div>
+
+                    <button class="accordion">Chương trình giảng dạy phong phú và chặt chẽ</button>
+                    <div class="accordion-content">
+                        <p>Tiếng Anh giảng dạy chuyên sâu</p>
+                        <p>Thế mạnh học thuật của môn Toán và Khoa học theo giáo trình Singapore đã được chương trình
+                            đánh giá học sinh quốc tế PISA công nhận</p>
+                        <p>Giảng dạy môn học tiếng Việt và tiếng Hoa</p>
+                        <p>Kỹ năng tin học và các phương pháp học trực tuyến được đưa vào giảng dạy tại tất cả các bậc
+                            học.</p>
+                        <p>Chương trình Trung học Đại cương Quốc tế Cambridge (IGCSE), Chương trình Cambridge Quốc tế
+                            Cấp độ AS và A, và Chương trình Chứng chỉ Quốc tế Bậc 3 International Foundation Diploma for
+                            Higher Education Studies (L3IFDHES).</p>
+                        <span>Để biết thêm thông tin, vui lòng tham khảo tại phần Con đường học vấn.</span>
+                    </div>
+
+                    <button class="accordion">Đội ngũ Giáo viên có trình độ</button>
+                    <div class="accordion-content">
+                        <p>Có bằng cấp quốc tế và giàu kinh nghiệm</p>
+                        <p>Nỗ lực hết mình cho thành tích cao nhất của học sinh</p>
+                        <p>Đem những hiểu biết về thế giới đến với từng lớp học</p>
+                        <p>Áp dụng các phương pháp giảng dạy tốt nhất</p>
+                        <p>Thường xuyên tham gia các chương trình đào tạo nâng cao chuyên môn</p>
+                        <span>Để biết thêm thông tin, vui lòng tham khảo tại phần Đội Ngũ Giáo Viên.</span>
+
+                    </div>
+
+                    <button class="accordion">Cơ hội du học</button>
+                    <div class="accordion-content">
+                        <p>Chương trình thăm quan kết hợp học tập tại Singapore hàng năm dành cho học sinh các lớp cuối
+                            cấp Tiểu học trở lên</p>
+                        <p>Thiết lập quan hệ đối tác với các trường Đại học hàng đầu tại Hoa Kỳ và Vương quốc Anh</p>
+                        <span>Để biết thêm thông tin, vui lòng tham khảo tại phần Du học.</span>
+
+
+                    </div>
+
+                    <button class="accordion">Cơ sở vật chất hiện đại</button>
+                    <div class="accordion-content">
+                        <p>Cơ sở vật chất được xây dựng theo tiêu chuẩn trường học quốc tế</p>
+                        <p>Phòng học và phòng chức năng được thiết kế đặc biệt nhằm tối ưu hóa việc học tập</p>
+                        <p>Công nghệ tiên tiến được sử dụng trong toàn trường</p>
+                        <span>Để biết thêm thông tin, vui lòng tham khảo tại phần Học xá của chúng tôi.</span>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_tintuc" id="tintuc">
+        <div class="div_tintuc">
+            <p>Tin Tức và Sự Kiện</p>
+            <div class="full_tintuc">
+                <div>
+                    <img src="./picture/thongbao1.jpg" alt="">
+                    <a href="tin1.html">Thành tích học tập và thi ...</a>
+                    <span>May 16, 2023</span>
+                    <p>👏👏👏 Xin chúc mừng các em học sinh Trường Quốc tế Singapore Đà Nẵng với những thành tích ấn
+                        tượng…</p>
+                </div>
+                <div>
+                    <img src="./picture/thongbao2.jpg" alt="">
+                    <a href="tin2.html">Giải vô địch đánh vần học ...</a>
+                    <span>April 29, 2023</span>
+                    <p>️🎤️🎤Chị ong nâu nâu nâu nâu. Chị bay đi đâu đi đâu?️🎤️🎤 Chị bay đi xem các em học sinh…</p>
+                </div>
+                <div>
+                    <img src="./picture/thongbao3.jpg" alt="">
+                    <a href="">Ngày hội xanh</a>
+                    <span>April 28, 2023</span>
+                    <p>“Ngày hội xanh” vừa diễn ra tại SIS @ Đà Nẵng với các hoạt động thật phong phú và sôi…</p>
+
+                </div>
+                <div> 
+                    <img src="./picture/thongbao4.jpg" alt="">
+                    <a href="">Ngày hội gia đình</a>
+                    <span>March 19, 2023</span>
+                    <p>Ngày hội gia đình là một trong những sự kiện thú vị và được mong chờ nhất trong năm. Tại…</p>
+                </div>
+            </div>
+            <div class="xemthem">
+                <a href="bantin.html">XEM CÁC TIN KHÁC</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="sinhvien">
+        <div class="khung_sinhvien">
+            <div class="text_thongtin">
+                <p>Thành tích học tập của học sinh</p>
+                <div class="truycap_xem">
+                    <p>Truy cập vào trang </p>
+                    <div class="thanhtich">
+                        <a href="">Thành tích học tập của học sinh</a>
+                    </div>
+                    <p> để biết thêm thông tin</p>
+                </div>
+            </div>
+            <div class="img_sinhvien">
+                <div><img src="./picture/Kim-Jiwoo-VN.jpg" alt=""></div>
+                <div><img src="./picture/Lee-Dahyeon-VN.jpg" alt=""></div>
+                <div><img src="./picture/Nguyen-Ngoc-Minh-Anh-VN.jpg" alt=""></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2013 - 2023 Singapore International School @ Danang</p>
+    </footer>
+    <script>
+    	//const temp = document.documentElement;
+    	//function handler(){
+    	//	let vitri = temp.scrollTop;
+    	//	console.log(vitri);
+    		 const menuElement = document.getElementById('tintuc');
+  			menuElement.scrollIntoView({ behavior: 'smooth' });
+    //	}
+    	//document.addEventListener('scroll',handler);
+    	//console.log(temp.scrollTop);
+    </script>
+    <script src="home.js"></script>
 </body>
+</body>
+
 </html>

@@ -1,0 +1,82 @@
+
+html{
+    height: 100vh;
+}
+body{
+    height: 76%;
+}
+section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 4px gray;
+    min-height: 550px;
+}
+.div_dangnhap{
+    width: 600px;
+    height: 550px;
+    box-shadow: 4px 4px 15px gray;
+    
+}
+.div_dangnhap>.title{
+    text-align: center;
+    background-color: rgb(243, 105, 54);
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 70px;
+}
+.div_dangnhap>.dangnhap{
+    width: 80%;
+    margin: 0 auto;
+}
+.div_dangnhap input,
+.div_dangnhap button{
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid gray;
+    margin-top: 25px;
+}
+.div_dangnhap button{
+    background-color: orange;
+    color: white;
+    font-size: 25px;
+}
+.div_dangnhap button:hover{
+    background-color: rgb(255, 132, 0);
+}
+.div_dangnhap button:active{
+    transform: scale(1.04);
+}
+.div_dangnhap>.or{
+    width: 100%;
+    text-align: center;
+    color: aqua;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 60px;
+}
+.div_dangnhap>.other{
+    width: 100%;
+    height: 75px;
+    
+    text-align: center;
+}
+.div_dangnhap>.other>img{
+    width: 60px;
+    padding: 0 5px;
+}
+.div_dangnhap>.other>img:last-child{width: 85px;}
+.div_dangnhap>.other>img:hover{
+    transform: scale(1.05);
+}
+.div_dangnhap>.chuyentrang{
+    width: 100%;
+    text-align: center;
+}
+.div_dangnhap>.chuyentrang a{
+    text-decoration: none;
+}
